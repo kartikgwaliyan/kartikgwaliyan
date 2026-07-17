@@ -1,205 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartik Gwaliyan | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0d1117;
+            color:#ffffff;
+            line-height:1.7;
+        }
+
+        header{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            text-align:center;
+            padding:70px 20px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header h2{
+            color:#00d8ff;
+            font-weight:400;
+            margin-bottom:20px;
+        }
+
+        header p{
+            max-width:750px;
+            margin:auto;
+            color:#ddd;
+        }
+
+        nav{
+            background:#161b22;
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:18px;
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            transition:.3s;
+            font-weight:500;
+        }
+
+        nav a:hover{
+            color:#00d8ff;
+        }
+
+        section{
+            width:90%;
+            max-width:1100px;
+            margin:70px auto;
+        }
+
+        h2{
+            color:#00d8ff;
+            margin-bottom:25px;
+            border-left:5px solid #00d8ff;
+            padding-left:15px;
+        }
+
+        .card{
+            background:#161b22;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,.3);
+            margin-top:20px;
+        }
+
+        ul{
+            padding-left:25px;
+        }
+
+        li{
+            margin:12px 0;
+        }
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .skill-box{
+            background:#21262d;
+            padding:20px;
+            border-radius:12px;
+            transition:.3s;
+        }
+
+        .skill-box:hover{
+            transform:translateY(-8px);
+            background:#2b3137;
+        }
+
+        .project{
+            background:#21262d;
+            padding:25px;
+            border-radius:15px;
+        }
+
+        .badges{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:20px;
+        }
+
+        .badge{
+            background:#00d8ff;
+            color:#000;
+            padding:8px 15px;
+            border-radius:20px;
+            font-weight:600;
+        }
+
+        .stats{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+            margin-top:30px;
+        }
+
+        .stats img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .contact a{
+            color:#00d8ff;
+            text-decoration:none;
+        }
+
+        .quote{
+            background:#21262d;
+            padding:25px;
+            border-left:6px solid #00d8ff;
+            font-style:italic;
+            border-radius:12px;
+        }
+
+        footer{
+            background:#161b22;
+            text-align:center;
+            padding:25px;
+            margin-top:70px;
+            color:#bbb;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 28px;
+            background:#00d8ff;
+            color:black;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:white;
+        }
+
+    </style>
+
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Kartik Gwaliyan</h1>
-            <p>B.Tech CSE Student | Competitive Programmer | Full Stack Developer</p>
+<header>
 
-            <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:kartikgwaliyan123@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </header>
+<h1>👋 Hi, I'm Kartik Gwaliyan</h1>
 
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
+<h2>B.Tech CSE Student | Competitive Programmer | Full Stack Web Developer | Cloud Enthusiast</h2>
 
-            <p>
-                Hello! I'm <b>Kartik Gwaliyan</b>, a Computer Science Engineering
-                student passionate about building web applications,
-                solving Data Structures & Algorithms problems,
-                and learning Cloud Computing and Cyber Security.
-            </p>
-        </div>
-    </section>
+<p>
+Passionate about solving coding problems, building responsive web applications,
+and continuously learning new technologies to become a Software Development Engineer.
+</p>
 
-    <!-- Skills -->
-    <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
+<a class="btn" href="https://github.com/kartikgwaliyan" target="_blank">Visit GitHub</a>
 
-            <div class="skills">
+</header>
 
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Languages</h3>
-                    <p>C++<br>Python<br>JavaScript</p>
-                </div>
+<nav>
 
-                <div class="card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Frontend</h3>
-                    <p>HTML5<br>CSS3<br>JavaScript</p>
-                </div>
+<a href="#about">About</a>
 
-                <div class="card">
-                    <i class="fa-solid fa-cloud"></i>
-                    <h3>Tools</h3>
-                    <p>Git<br>GitHub<br>AWS<br>VS Code</p>
-                </div>
+<a href="#skills">Skills</a>
 
-                <div class="card">
-                    <i class="fa-solid fa-brain"></i>
-                    <h3>Core</h3>
-                    <p>DSA<br>OOP<br>Problem Solving</p>
-                </div>
+<a href="#project">Project</a>
 
-            </div>
-        </div>
-    </section>
+<a href="#achievements">Achievements</a>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container">
+<a href="#certifications">Certificates</a>
 
-            <h2>Projects</h2>
+<a href="#stats">GitHub Stats</a>
 
-            <div class="project">
+<a href="#contact">Contact</a>
 
-                <h3>🎮 SkillQuest – Learn & Play</h3>
+</nav>
 
-                <p>
-                    A gamified learning platform developed using
-                    HTML, CSS and JavaScript.
-                </p>
+<section id="about">
 
-                <ul>
-                    <li>Quiz Based Learning</li>
-                    <li>Progress Tracking</li>
-                    <li>Responsive Design</li>
-                    <li>Interactive User Interface</li>
-                </ul>
+<h2>🚀 About Me</h2>
 
-                <a href="#" class="btn">GitHub Repository</a>
+<div class="card">
 
-            </div>
+<ul>
 
-        </div>
-    </section>
+<li>🎓 B.Tech in Computer Science & Engineering (AKTU)</li>
 
-    <!-- Achievements -->
-    <section id="achievement">
+<li>🏫 ABES Engineering College</li>
 
-        <div class="container">
+<li>💡 Passionate about Web Development and Competitive Programming</li>
 
-            <h2>Achievements</h2>
+<li>🌱 Currently learning Full Stack Development, Cloud Computing & Cyber Security</li>
 
-            <div class="timeline">
+<li>⚡ Strong interest in Data Structures & Algorithms</li>
 
-                <div class="item">
-                    <h3>🏆 Competitive Programming</h3>
-                    <p>
-                        Solved numerous coding problems on CodeChef
-                        and improved algorithmic thinking.
-                    </p>
-                </div>
+<li>🎯 Goal: Become a Software Development Engineer (SDE)</li>
 
-                <div class="item">
-                    <h3>⭐ DSA Journey</h3>
-                    <p>
-                        Strong understanding of Arrays,
-                        Strings, Greedy Algorithms,
-                        OOP and Problem Solving.
-                    </p>
-                </div>
+</ul>
 
-            </div>
+</div>
 
-        </div>
+</section>
 
-    </section>
+<section id="skills">
 
-    <!-- Certifications -->
-    <section id="certificates">
+<h2>🛠 Tech Stack</h2>
 
-        <div class="container">
+<div class="skills">
 
-            <h2>Certifications</h2>
+<div class="skill-box">
+<h3>Languages</h3>
+<p>C++<br>Python<br>JavaScript</p>
+</div>
 
-            <div class="cards">
+<div class="skill-box">
+<h3>Frontend</h3>
+<p>HTML5<br>CSS3<br>JavaScript (ES6)</p>
+</div>
 
-                <div class="card">
-                    <i class="fa-brands fa-aws"></i>
-                    <h3>AWS Cloud Foundations</h3>
-                </div>
+<div class="skill-box">
+<h3>Tools</h3>
+<p>Git<br>GitHub<br>VS Code<br>AWS Cloud Foundations</p>
+</div>
 
-                <div class="card">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>Deloitte Cyber Job Simulation</h3>
-                </div>
+<div class="skill-box">
+<h3>Core Subjects</h3>
+<p>DSA<br>OOP<br>Problem Solving</p>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</section>
 
-    </section>
+<section id="project">
 
-    <!-- Contact -->
-    <section id="contact">
+<h2>🎮 Featured Project</h2>
 
-        <div class="container">
+<div class="project">
 
-            <h2>Contact Me</h2>
+<h3>SkillQuest – Learn and Play</h3>
 
-            <p>
-                <i class="fas fa-envelope"></i>
-                kartikgwaliyan123@gmail.com
-            </p>
+<p>
 
-            <p>
-                <i class="fas fa-phone"></i>
-                +91 7983573129
-            </p>
+A gamified learning platform developed using HTML, CSS and JavaScript.
 
-            <p>
-                <i class="fas fa-location-dot"></i>
-                Ghaziabad, Uttar Pradesh
-            </p>
+</p>
 
-        </div>
+<br>
 
-    </section>
+<h4>Features</h4>
 
-    <!-- Footer -->
-    <footer>
+<div class="badges">
 
-        <p>
-            © 2026 Kartik Gwaliyan | Made with ❤️ using HTML & CSS
-        </p>
+<span class="badge">Quiz Based Learning</span>
 
-    </footer>
+<span class="badge">Progress Tracking</span>
+
+<span class="badge">Responsive Design</span>
+
+<span class="badge">Interactive UI</span>
+
+<span class="badge">Technical Skill Development</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements">
+
+<h2>🏆 Achievements</h2>
+
+<div class="card">
+
+<ul>
+
+<li>⭐ Solved multiple coding problems on CodeChef.</li>
+
+<li>🚀 Improved algorithmic thinking through Competitive Programming.</li>
+
+<li>💯 Completed foundational Data Structures & Algorithms topics.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2>📜 Certifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>AWS Academy Graduate – Cloud Foundations</li>
+
+<li>Deloitte Cyber Job Simulation (Forage)</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2>📈 GitHub Stats</h2>
+
+<div class="stats">
+
+<img src="https://github-readme-stats.vercel.app/api?username=kartikgwaliyan&show_icons=true&theme=tokyonight">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kartikgwaliyan&theme=tokyonight">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kartikgwaliyan&layout=compact&theme=tokyonight">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>🌐 Connect With Me</h2>
+
+<div class="card contact">
+
+<p>📧 <strong>Email:</strong>
+<a href="mailto:kartikgwaliyan123@gmail.com">kartikgwaliyan123@gmail.com</a>
+</p>
+
+<br>
+
+<p>💻 <strong>GitHub:</strong>
+
+<a href="https://github.com/kartikgwaliyan" target="_blank">
+
+github.com/kartikgwaliyan
+
+</a>
+
+</p>
+
+<br>
+
+<p>💼 <strong>LinkedIn:</strong>
+
+<a href="https://linkedin.com/in/your-linkedin" target="_blank">
+
+linkedin.com/in/your-linkedin
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>💡 Quote</h2>
+
+<div class="quote">
+
+"Consistency beats talent when talent doesn't work consistently."
+
+</div>
+
+</section>
+
+<footer>
+
+⭐ If you like my projects, don't forget to star my repositories.
+
+<br><br>
+
+© 2026 Kartik Gwaliyan
+
+</footer>
 
 </body>
-
 </html>
